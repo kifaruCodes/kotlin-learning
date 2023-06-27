@@ -88,6 +88,7 @@ fun main(){
     // ternary operator
 
     // When statement
+    // Example 1
     val when_var  = readLine()!!.toInt()
     when(when_var){
         10 -> {
@@ -100,5 +101,38 @@ fun main(){
             println("The number is not listed")
         }
     }
+
+    // Example 3
+    println("enter fitst number")
+    val no1 = readLine()!!.toInt()
+
+    println("enter second no")
+    val no2 = readln()!!.toInt()
+
+    println("enter operator")
+    val op = readln()
+
+    val result = when (op){
+        "+" -> {
+            "$no1 $op $no2 = ${no1 + no2}"
+        }
+        "-" -> {
+            "$no1 $op $no2 = ${no1 - no2}"
+        }
+        "*" -> {
+            "$no1 $op $no2 = ${no1 * no2}"
+        }
+        "/" -> {
+            "$no1 $op $no2 = ${no1 / no2}"
+        }
+        "%" -> {
+            "$no1 $op $no2 = ${no1 % no2}"
+        }
+        else -> {
+            "The operator selected is not in the list"
+        }
+    }
+
+    println(result)
 }
 
