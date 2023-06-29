@@ -134,5 +134,40 @@ fun main(){
     }
 
     println(result)
+
+    /*
+    *   Loops (While and for loops)
+    *
+    * */
+
+    // While loops
+    var while_no = 0
+    while (while_no <= 10){
+        println(while_no)
+        ++while_no
+    }
+
+    // do-while loop
+    var do_no = 0
+    do {
+        println(do_no)
+        ++do_no
+    } while (do_no <=10)
+
+    // for loops
+    // print numbers 1 to 100
+    var no_for = 0
+    for (i in 1..100){
+        println(no_for)
+    }
+
+    // print the sum of each following number from 1 to 100
+    // ie 1 + 2 + 3 + 4 ... + 98 + 99 + 100
+    var no_for2 = 0
+    for (i in 1..100){
+        print("$no_for2 + $i = ")
+        no_for2 += i
+        println(no_for2)
+    }
 }
 
